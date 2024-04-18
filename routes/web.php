@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +19,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::view("/", "login"); // Without creating Controller using Route
+Route::get("/login", function() {
+    return view('login');
+});
+// Route::view("/", "login"); // Without creating Controller using Route
+Route::post('/login', [UserController::class, 'login']);
+Route::get('/', [ProductController::class, 'index']);
