@@ -18,6 +18,41 @@
             height: 500px;
             padding-top: 100px;
         }
+        img.slider-img
+        {
+            height:400px !important;
+        }
+        .custom-product{
+            height: 500px;
+            text-align: center;
+        }
+        .slider-text
+        {
+            background-color: rgb(19, 96, 129);
+        }
+        .tranding-img
+        {
+            height: 100px;
+           
+        }
+        .tranding-items
+        {
+            float: left;
+            width: 20%
+        }
+        .tranding-wrapper
+        {
+            margin: 20px;
+        }
+        .detail-img
+        {
+            height: 200px;
+        }
+        .search-box
+        {
+            width: 500px !important
+        }
+
     </style>
 </body>
 </html>
