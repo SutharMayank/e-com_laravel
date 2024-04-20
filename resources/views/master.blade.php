@@ -52,6 +52,12 @@
         {
             width: 500px !important
         }
+        .cart-list-devider
+        {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding-bottom: 20px
+        }
 
     </style>
 </body>

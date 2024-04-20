@@ -7,7 +7,6 @@ $totals= ProductController::cartItem();
 }
 ?>
 
-
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,7 +34,7 @@ $totals= ProductController::cartItem();
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">cart{{$totals}}</a></li>
+        <li><a href="/cartlist">cart Item{{$totals}}</a></li>
         @if(Session::has('user'))
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
