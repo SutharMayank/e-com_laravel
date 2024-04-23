@@ -21,6 +21,7 @@
         img.slider-img
         {
             height:400px !important;
+            padding-inline-start: 90ch
         }
         .custom-product{
             height: 500px;
@@ -28,7 +29,8 @@
         }
         .slider-text
         {
-            background-color: rgb(19, 96, 129);
+            background-color: rgb(255, 255, 255);
+            color: black
         }
         .tranding-img
         {

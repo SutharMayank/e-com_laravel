@@ -44,11 +44,24 @@ Route::get('/logout', function(Request $request) {
 });
 
 // Route::view("/", "login"); // Without creating Controller using Route
+Route::view('/register','register');
 Route::post("/login", [UserController::class, 'login']);
+Route::post("/register", [UserController::class, 'register']);
 Route::get("/", [ProductController::class, 'index']);
 Route::get("detail/{id}", [ProductController::class, 'detail']);
 Route::get("search", [ProductController::class, 'search']);
 Route::post("/add_to_cart", [ProductController::class, 'addToCart']);
 Route::get("cartlist",[ProductController::class,'cartList']);
+Route::get("removecart/{id}", [ProductController::class, 'removecart']);
+Route::get("ordernow",[ProductController::class,'orderNow']); 
+Route::post("orderplace",[ProductController::class,'orderPlace']);
+Route::get("myorders",[ProductController::class,'myOrders']);
+Route::get("product" , [ProductController::class, 'store'])->name('product');;
+Route::post("myproduct", [ProductController::class, 'myproduct'])->name('myproduct');
+// Route::match(['GET', 'POST'], "/myproduct", [ProductController::class, 'myproduct'])->name('myproduct');
+
+
+
+
 
 
